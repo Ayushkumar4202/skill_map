@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMap - Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            background: #0d0d0d; /* Dark background */
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #FFD700;
+            text-transform: uppercase;
+            padding: 12px 26px;
+            border: 3px solid #FFD700;
+            border-radius: 12px;
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.08);
+            box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+            animation: glow 3s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0px 0px 6px rgba(255, 215, 0, 0.4);
+            }
+            to {
+                box-shadow: 0px 0px 16px rgba(255, 215, 0, 0.7);
+            }
+        }
+        .subtitle {
+    text-align: left;
+    font-size: 1.8rem;
+    margin: 20px 0 25px 5px;
+    font-weight: 700;
+    color: #FFEA00;
+    padding-left: 12px;
+    border-left: 4px solid #FFD700;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.4);
+}
+        a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin: 12px;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #FFD700;
+            box-shadow: 0px 3px 8px rgba(255,215,0,0.2);
+        }
+        a:hover {
+            background: linear-gradient(135deg, #2a2a2a, #444);
+            transform: translateY(-2px);
+            color: #fff;
+        }
+        .objective {
+            margin-top: 30px;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+        .objective h2 {
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+            color: #FFD700;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 35px;
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0px 4px 10px rgba(255,215,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 16px rgba(255,215,0,0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid #FFD700;
+            filter: brightness(0.95) contrast(1.05);
+            transition: filter 0.3s ease;
+        }
+        .card img:hover {
+            filter: brightness(1) contrast(1.1);
+        }
+        .card p {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #FFD700;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 12px;
+            font-size: 0.9rem;
+            background: rgba(255, 215, 0, 0.05);
+            border-top: 1px solid #333;
+            border-radius: 8px;
+            color: #aaa;
+            text-align: center;
+        }
+        footer span {
+            color: #FFD700;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .subtitle { font-size: 1.3rem; }
+            .gallery { flex-direction: column; align-items: center; }
+            .card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SkillMap</h1>
+        <div class="subtitle">Welcome to SkillMap</div>
+
+        <a href="https://forms.gle/wGAXY3ZjpUCfXQTH7" target="_blank">Apply for SkillMap</a>
+        <a href="SkillMap - Skills.html">View Student Data</a>
+        
+        <div class="objective">
+            <h2>OBJECTIVE</h2>
+            <p>
+                The core objective of SkillMap is to discover, organize, and apply student talents 
+                for fair and efficient participation in school events. By identifying hidden skills 
+                that often go unnoticed, SkillMap ensures equitable opportunities for all students, 
+                fosters inclusion, boosts confidence, and enhances the quality of school activities. 
+                Over time, this system aims to develop students as valuable human resources who 
+                contribute meaningfully to society and the nation.
+            </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <div class="card">
+                <img src="for webpage.jpg" alt="Filmmaking">
+                <p>🎬 Filmmaking</p>
+            </div>
+            <div class="card">
+                <img src="Singing_for_webpage.jpg" alt="Singing">
+                <p>🎤 Singing</p>
+            </div>
+            <div class="card">
+                <img src="dance of webpage.jpg" alt="Dancing">
+                <p>💃 Dancing</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 <span>SkillMap</span> | Made by <span>Ayush Kumar</span> | Guide: <span>Joyti Rani</span></p>
+        </footer>
+    </div>
+</body>
+</html>
