@@ -8,8 +8,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, sans-serif;
             margin: 0;
-            background: #f5f5dc; /* Beige background */
-            color: #111;
+            background: linear-gradient(145deg, #f0f4f8, #d9e2ec); /* Lighter gradient */
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,33 +25,33 @@
             font-size: 3.2rem;
             margin-bottom: 10px;
             letter-spacing: 2px;
-            color: #000;
+            color: #FFB800; /* Softer gold */
             text-transform: uppercase;
             padding: 12px 26px;
-            border: 3px solid #000;
+            border: 3px solid #FFB800;
             border-radius: 12px;
             display: inline-block;
-            background: rgba(0, 0, 0, 0.06);
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+            background: rgba(255, 184, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(255, 184, 0, 0.3);
             animation: glow 3s infinite alternate;
         }
         @keyframes glow {
-            from { box-shadow: 0px 0px 6px rgba(184, 134, 11, 0.3); }
-            to { box-shadow: 0px 0px 16px rgba(184, 134, 11, 0.6); }
+            from { box-shadow: 0px 0px 6px rgba(255, 184, 0, 0.3); }
+            to { box-shadow: 0px 0px 16px rgba(255, 184, 0, 0.6); }
         }
         .subtitle {
             text-align: left;
             font-size: 1.8rem;
             margin: 20px 0 25px 5px;
             font-weight: 700;
-            color: #000;
+            color: #FFB800;
             padding-left: 12px;
-            border-left: 4px solid #000;
-            text-shadow: 0px 0px 8px rgba(184, 134, 11, 0.4);
+            border-left: 4px solid #FFB800;
+            text-shadow: 0px 0px 5px rgba(255, 184, 0, 0.3);
         }
         a {
             text-decoration: none;
-            background: #fff;
+            background: linear-gradient(135deg, #fff, #f0f0f0);
             padding: 12px 24px;
             border-radius: 8px;
             margin: 12px;
@@ -59,12 +59,11 @@
             font-size: 1rem;
             font-weight: 600;
             transition: all 0.3s ease;
-            color: #000;
-            border: 1px solid #b8860b;
-            box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+            color: #FFB800;
+            box-shadow: 0px 3px 8px rgba(255,184,0,0.2);
         }
         a:hover {
-            background: #f0e6c8;
+            background: linear-gradient(135deg, #e0e0e0, #d0d0d0);
             transform: translateY(-2px);
             color: #333;
         }
@@ -72,15 +71,16 @@
             margin-top: 30px;
             font-size: 1.05rem;
             line-height: 1.6;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.6);
             padding: 18px;
             border-radius: 10px;
             border: 1px solid #ccc;
+            color: #333;
         }
         .objective h2 {
             margin-bottom: 10px;
             font-size: 1.6rem;
-            color: #000;
+            color: #FFB800;
         }
         .gallery {
             display: flex;
@@ -90,42 +90,48 @@
             gap: 20px;
         }
         .card {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 12px;
             overflow: hidden;
             width: 280px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0px 4px 10px rgba(255,184,0,0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
         }
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0px 6px 16px rgba(0,0,0,0.2);
+            box-shadow: 0px 6px 16px rgba(255,184,0,0.3);
         }
         .card img {
             width: 100%;
             height: 180px;
             object-fit: cover;
-            border-bottom: 2px solid #000;
+            border-bottom: 2px solid #FFB800;
+            filter: brightness(1) contrast(1);
+            transition: filter 0.3s ease;
+        }
+        .card img:hover {
+            filter: brightness(1.05) contrast(1.1);
         }
         .card p {
             margin: 0;
             padding: 10px;
             font-size: 1.1rem;
             font-weight: 600;
-            color: #000;
+            color: #FFB800;
         }
         footer {
             margin-top: 40px;
             padding: 12px;
             font-size: 0.9rem;
-            background: rgba(0, 0, 0, 0.06);
+            background: rgba(255, 184, 0, 0.1);
             border-top: 1px solid #ccc;
             border-radius: 8px;
             color: #555;
             text-align: center;
         }
         footer span {
-            color: #000;
+            color: #FFB800;
             font-weight: 600;
         }
         @media (max-width: 600px) {
@@ -143,19 +149,20 @@
 
         <a href="https://forms.gle/wGAXY3ZjpUCfXQTH7" target="_blank">Apply for SkillMap</a>
         <a href="SkillMap - Skills.html">View Student Data</a>
-
+        
         <div class="objective">
             <h2>OBJECTIVE</h2>
             <p>
-                The core objective of SkillMap is to discover, organize, and apply student talents
-                for fair and efficient participation in school events. By identifying hidden skills
-                that often go unnoticed, SkillMap ensures equitable opportunities for all students,
-                fosters inclusion, boosts confidence, and enhances the quality of school activities.
-                Over time, this system aims to develop students as valuable human resources who
+                The core objective of SkillMap is to discover, organize, and apply student talents 
+                for fair and efficient participation in school events. By identifying hidden skills 
+                that often go unnoticed, SkillMap ensures equitable opportunities for all students, 
+                fosters inclusion, boosts confidence, and enhances the quality of school activities. 
+                Over time, this system aims to develop students as valuable human resources who 
                 contribute meaningfully to society and the nation.
             </p>
         </div>
 
+        <!-- Gallery Section -->
         <div class="gallery">
             <div class="card">
                 <img src="for webpage.jpg" alt="Filmmaking">
@@ -171,6 +178,7 @@
             </div>
         </div>
 
+        <!-- Footer -->
         <footer>
             <p>© 2025 <span>SkillMap</span> | Made by <span>Ayush Kumar</span> | Guide: <span>Joyti Rani</span></p>
         </footer>
